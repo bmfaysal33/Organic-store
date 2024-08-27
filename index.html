@@ -48,41 +48,16 @@
       };
     </script>
   </head>
+
+
+
   <body class="poppins-regular">
     <!-- header section  -->
     <header>
-      <nav class="w-full">
-        <div class="navbar bg-base-100 w-11/12 mx-auto">
+      <nav class="w-full mb-1">
+        <div class="navbar bg-base-100 w-11/12 mx-auto justify-between">
           <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Home</a></li>
-                <li><a>Everything</a></li>
-                <li><a>Groceries</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <a><img class="" src="images/logo-white.png" alt="" /> </a>
+            <a><img src="images/logo-white.png" alt="" /> </a>
           </div>
 
           <div class="navbar-center hidden lg:flex">
@@ -113,8 +88,42 @@
                 <a>Contact</a>
               </li>
             </ul>
+            
           </div>
-          <div class="navbar-end">
+
+          <!-- Hamburger menu  -->
+          <div>
+          
+            <label class="btn btn-circle swap swap-rotate lg:hidden bg-lime-600">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+            
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512">
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+            
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512">
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
+
+
+          </div>
+
+          <div class="navbar-end hidden lg:flex">
             <h4 class="text-2xl text-green-700 font-medium mr-2">$15.00</h4>
             <i
               class="fa-solid fa-cart-shopping text-2xl text-green-700 mr-6"
@@ -122,21 +131,22 @@
             <i class="fa-solid fa-user text-2xl"></i>
           </div>
         </div>
+
       </nav>
                   <!-- Banner styles  -->
 
-                  <div class="  h-screen bg-gray-200">
-                    <div class="bg-[url('images/leaf01.png')] bg-no-repeat h-full bg-right-bottom w-11/12 mx-auto flex flex-col lg:flex-row justify-center items-center  ">
-                      <div class="w-2/4 ">
+                  <div class="bg-gray-200">
+                    <div class="  lg:bg-[url('images/leaf01.png')] bg-no-repeat h-full bg-right-bottom w-11/12 mx-auto flex flex-col lg:flex-row justify-center items-center gap-1 ">
+                      <div class="w-full lg:w-2/4 mx-auto">
                         <img class="w-11/12" src="images/bannerbg.png" alt="">
                       </div>
 
-                      <div class="w-2/5">
-                        <h4 class="text-2xl font-bold mb-7">Best Quality Products</h4>
-                        <h2 class="text-7xl font-extrabold mb-7" >Join The Organic Movement!</h2>
-                        <p class="text-2xl  mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                      <div class="text-center lg:text-left lg:w-2/5">
+                        <h4 class="text-xl lg:text-2xl font-bold mb-7">Best Quality Products</h4>
+                        <h2 class="text-4xl lg:text-7xl font-extrabold mb-7" >Join The Organic Movement!</h2>
+                        <p class="text-xs lg:text-2xl  mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                        <button class=" rounded-lg bg-lime-600 text-white px-9 py-5 font-medium text-2xl hover:bg-lime-400 transition-colors duration-300 ease-in-out"><i
+                        <button class=" rounded-lg bg-lime-600 text-white px-9 py-5 font-medium lg:text-2xl hover:bg-lime-400 transition-colors duration-300 ease-in-out"><i
                           class="fa-solid fa-cart-shopping mr-1"
                         ></i> Shop Now</button>
 
